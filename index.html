@@ -15,6 +15,121 @@
     />
   </head>
   <body>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Please Enter your Name"
+          required
+          autocomplete="given-name"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="" />
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" />
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" id="password" autocomplete="new-password" />
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          autocomplete="new-password"
+        />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" rows="10" cols="50"></textarea>
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <select autocomplete="sex">
+          <option value="">Please Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="college">College</label>
+        <input type="text" id="college" list="college-list" />
+        <datalist id="college-list">
+          <option value="Nirma" />
+          <option value="LDRP" />
+          <option value="Silver Oack" />
+        </datalist>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="range" min="0" max="100" />
+      </div>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            checked
+            autocomplete="sex"
+          />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" autocomplete="sex" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+
+      <!-- <div>
+        <label for="color">Color</label>
+        <input type="color" id="color" />
+      </div>
+      <div>
+        <label for="birthDate">Birth Date</label>
+        <input type="date" id="birthDate" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="datetime-local" id="event_time" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="month" id="event_time" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="number" id="event_time" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="password" id="event_time" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="search" id="event_time" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="time" id="event_time" />
+      </div>
+      <div>
+        <label for="event_time">Event Date Time</label>
+        <input type="" id="event_time" />
+      </div> -->
+      <button type="submit">Submit</button>
+    </form>
+
     <h1 style="font-size: 12px">Lorem.</h1>
     <h2>Lorem, ipsum.</h2>
     <h3>Lorem, ipsum dolor.</h3>
@@ -50,6 +165,14 @@
       />
       <img src="./assets/images/mailchimp@3x.jpg" />
     </picture>
+
+    <!-- <audio>
+
+    </audio>
+
+    <video>
+
+    </video> -->
 
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, ipsa!
