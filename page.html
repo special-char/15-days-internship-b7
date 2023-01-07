@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      section {
+        background-color: aqua;
+      }
+
+      h1 ~ h2 {
+        color: red;
+      }
+
+      section > div > h1 {
+        color: blue;
+      }
+
+      h1 {
+        color: brown !important;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,22 +32,28 @@
       <button>Let's Chat</button>
     </header>
     <main>
-      <section id="home" style="height: 100vh; background-color: pink">
+      <section id="home" style="height: 100vh">
         <div>
+          <h2>Developer</h2>
           <p>Hello World</p>
           <h1>I am Yagnesh Modh</h1>
-          <h2>Developer</h2>
           <p>
             An independent graphic designer. While graphic design can sometimes
             feel like a brand new industry, it’s actually quite the opposite.
           </p>
+
           <button>Hire Me</button>
           <button>Download Resume</button>
+          <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+          </div>
         </div>
         <div>
           <picture></picture>
         </div>
       </section>
+
+      <h1>Lorem, ipsum dolor.</h1>
     </main>
   </body>
 </html>
