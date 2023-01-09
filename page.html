@@ -8,92 +8,26 @@
 
     <link rel="stylesheet" href="./style.css" />
     <style>
-      section {
-        background-color: aqua;
-      }
-
-      h1 ~ h2 {
+      ul > li:nth-child(odd) {
         color: red;
       }
 
-      section > div > h1 {
-        color: blue;
-      }
-
-      h1 {
-        color: brown !important;
-      }
-
-      section h3 {
+      ul > li:hover {
         color: red;
+      }
+
+      ul > li::before {
+        content: "...";
       }
     </style>
   </head>
   <body>
-    <header>
-      <div id="logo">Logo</div>
-      <nav></nav>
-      <button>Let's Chat</button>
-    </header>
-    <main>
-      <section id="home" style="height: 100vh">
-        <div>
-          <h2>Developer</h2>
-          <p>Hello World</p>
-          <h1>I am Yagnesh Modh</h1>
-          <p>
-            An independent graphic designer. While graphic design can sometimes
-            feel like a brand new industry, it’s actually quite the opposite.
-          </p>
-
-          <button>Hire Me</button>
-          <button>Download Resume</button>
-          <div>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-          </div>
-        </div>
-        <div>
-          <picture></picture>
-        </div>
-      </section>
-
-      <h1>Lorem, ipsum dolor.</h1>
-
-      <section>
-        <h1>Lorem, ipsum dolor.</h1>
-
-        <div>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            quisquam corrupti, sint perspiciatis, aliquam nemo aspernatur
-            adipisci repellat iste vel eligendi. Incidunt facilis facere
-            quisquam similique, perspiciatis assumenda provident saepe.
-          </p>
-          <h3>Lorem ipsum dolor sit amet.</h3>
-        </div>
-        <div>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            quisquam corrupti, sint perspiciatis, aliquam nemo aspernatur
-            adipisci repellat iste vel eligendi. Incidunt facilis facere
-            quisquam similique, perspiciatis assumenda provident saepe.
-          </p>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
-            qui quis? Eius consequatur placeat saepe numquam repudiandae tempore
-            nisi facilis, doloremque quod fugiat laborum laudantium
-            exercitationem minus consequuntur! Quo, in.
-          </h3>
-        </div>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-          quisquam corrupti, sint perspiciatis, aliquam nemo aspernatur adipisci
-          repellat iste vel eligendi. Incidunt facilis facere quisquam
-          similique, perspiciatis assumenda provident saepe.
-        </p>
-      </section>
-    </main>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
   </body>
 </html>
