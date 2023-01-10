@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
 
     <link rel="stylesheet" href="./style.css" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,12 +47,60 @@
         src: url("./assets/fonts/Poppins-Light.ttf");
       } */
 
+      :root {
+        --primary-color: red;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       html {
-        font-family: "poppinslit", sans-serif;
+        font-family: "poppinsreg", sans-serif;
+      }
+
+      /* 
+      px
+      pt
+      cm
+      mm
+      in
+      pc
+      ch
+      */
+      .btn {
+        padding: 8px 16px;
+        background-color: #661fff;
+        border: 0;
+        color: #fff;
+        border-radius: 4px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .btn--red {
+        background-color: red;
       }
     </style>
   </head>
   <body>
+    <button class="btn">Submit</button>
+
+    <div class="btn btn--red">Click Here</div>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+      <em style="color: red">consequuntur</em> officiis placeat laboriosam
+      excepturi nulla, voluptate, quos veniam sapiente vero obcaecati eligendi!
+      Neque sequi optio minima illo sunt minus veritatis.
+    </p>
+    <!-- <h1>hello</h1> -->
+    <!-- <span>hello</span>
+    <span>how are you?</span> -->
+
     <header>
       <a href="#">
         <svg
