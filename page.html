@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    /> -->
 
     <link rel="stylesheet" href="./style.css" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,6 +53,8 @@
 
       * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
       html {
@@ -68,7 +70,7 @@
       pc
       ch
       */
-      .btn {
+      /* .btn {
         padding: 8px 16px;
         background-color: #661fff;
         border: 0;
@@ -83,11 +85,62 @@
 
       .btn--red {
         background-color: red;
+      } */
+
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        /* align-content: stretch; */
+        /* flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end; */
+
+        background-color: yellow;
+        /* height: 100vh; */
       }
+
+      .box {
+        height: 100px;
+        /* width: 100px; */
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        background-color: red;
+        flex-shrink: 0;
+        flex-basis: 375px;
+      }
+
+      /* .box:nth-child(1) {
+        flex-grow: 3;
+        background-color: red;
+      }
+      .box:nth-child(2) {
+        flex-grow: 2;
+        background-color: pink;
+      }
+      .box:nth-child(3) {
+        flex-grow: 1;
+        background-color: violet;
+      }
+      .box:nth-child(4) {
+        background-color: green;
+      }
+      .box:nth-child(5) {
+        background-color: blue;
+      } */
     </style>
   </head>
   <body>
-    <button class="btn">Submit</button>
+    <div class="wrapper">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+
+    <!-- <button class="btn">Submit</button>
 
     <div class="btn btn--red">Click Here</div>
 
@@ -96,12 +149,12 @@
       <em style="color: red">consequuntur</em> officiis placeat laboriosam
       excepturi nulla, voluptate, quos veniam sapiente vero obcaecati eligendi!
       Neque sequi optio minima illo sunt minus veritatis.
-    </p>
+    </p> -->
     <!-- <h1>hello</h1> -->
     <!-- <span>hello</span>
     <span>how are you?</span> -->
 
-    <header>
+    <!-- <header>
       <a href="#">
         <svg
           width="235"
@@ -144,6 +197,6 @@
           <li><a href="#chat">Chat</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
   </body>
 </html>
